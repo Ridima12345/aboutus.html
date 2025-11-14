@@ -1,0 +1,61 @@
+import React from "react";
+
+export default function ContactPage() {
+  return (
+    <div className="min-h-screen w-full bg-[#0B0F19] text-gray-100 px-6 py-20 overflow-x-hidden relative">
+      {/* Background glows */}
+      <div className="absolute -left-32 -top-24 w-96 h-96 rounded-full bg-gradient-to-tr from-[#1f2a63] to-[#4527a0] opacity-30 blur-3xl pointer-events-none"></div>
+      <div className="absolute -right-32 -bottom-24 w-96 h-96 rounded-full bg-gradient-to-tr from-[#0ea5e9] to-[#7c3aed] opacity-20 blur-3xl pointer-events-none"></div>
+
+      <main className="relative z-10 max-w-3xl mx-auto p-10 rounded-3xl bg-[#0d1320]/50 border border-[#172233] shadow-2xl backdrop-blur-xl">
+        <h1 className="text-4xl font-bold text-center mb-6 text-white">Contact Us</h1>
+
+        <p className="text-lg mb-8 text-center text-gray-300 leading-relaxed">
+          We’re here to listen, support, and help you grow. Whether you have questions
+          about joining InTeen, want to collaborate, or simply want to share your ideas
+          — feel free to reach out. As high-school students building this initiative for
+          teens, we genuinely value every message we receive.
+        </p>
+
+        <div className="space-y-8 text-center mb-12">
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-1">📧 Email</h2>
+            <p className="text-xl text-gray-300">inteen924@gmail.com</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-1">📱 Phone Numbers</h2>
+            <p className="text-xl text-gray-300">+91 77018 17345</p>
+            <p className="text-xl text-gray-300">+91 78274 49847</p>
+          </div>
+        </div>
+
+        <form className="grid grid-cols-1 gap-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="p-4 rounded-xl bg-[#111827]/60 border border-[#1f2a40] text-gray-200 focus:outline-none focus:border-[#0ea5e9]"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="p-4 rounded-xl bg-[#111827]/60 border border-[#1f2a40] text-gray-200 focus:outline-none focus:border-[#0ea5e9]"
+          />
+
+          <textarea
+            placeholder="Your Message"
+            className="p-4 rounded-xl h-32 bg-[#111827]/60 border border-[#1f2a40] text-gray-200 focus:outline-none focus:border-[#0ea5e9]"
+          />
+
+          <button
+            type="submit"
+            className="p-4 rounded-xl bg-gradient-to-r from-[#0ea5e9] to-[#7c3aed] text-white font-semibold shadow-lg hover:opacity-90 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </main>
+    </div>
+  );
+}
